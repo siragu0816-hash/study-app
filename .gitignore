@@ -1,0 +1,9 @@
+# Personal study backups stay on your device.
+study-backup-*.json
+*.json
+.env
+.env.*
+node_modules/
+.DS_Store
+Thumbs.db
+*.log

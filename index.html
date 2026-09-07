@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#246454">
+<title>まいにち学習｜受験勉強の記録</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Noto Sans JP",sans-serif;color:#233c35;background:#f5f6f0;font-synthesis:none}*{box-sizing:border-box}body{margin:0}main{max-width:940px;margin:auto;padding:36px 24px 60px}header{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:32px}.brand{font-weight:800;font-size:19px}.mark{display:inline-grid;place-items:center;background:#246454;color:white;border-radius:12px;width:38px;height:38px;margin-right:10px}.date{font-size:13px;color:#64746b}h1{font-size:clamp(26px,5vw,36px);letter-spacing:-.04em;margin:0 0 10px}h2{font-size:18px;margin:0 0 22px}p{line-height:1.8}.intro{color:#6b7972;font-size:14px;margin:0 0 26px}.summary{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px}.stat{border-radius:20px;background:#e6ece3;padding:26px}.stat:first-child{background:#246454;color:white}.stat-label{font-size:14px;opacity:.85}.stat-value{font-size:clamp(25px,5vw,38px);font-weight:750;display:block;margin-top:14px;letter-spacing:-.03em}.columns{display:grid;grid-template-columns:1.05fr 1fr;gap:24px}.card{background:#fff;border:1px solid #e2e7de;border-radius:20px;padding:26px;margin-bottom:24px}label,legend{font-size:14px;font-weight:650}fieldset{border:0;margin:0 0 24px;padding:0}legend{padding:0;margin-bottom:12px}.subjects{display:flex;gap:8px}.subject{flex:1;position:relative}.subject input{position:absolute;opacity:0;width:1px;height:1px}.subject span{display:block;text-align:center;padding:13px 4px;border:1px solid #dce3dc;border-radius:10px;cursor:pointer;font-size:14px}.subject input:checked+span{background:#eaf3ec;border-color:#246454;color:#246454;box-shadow:inset 0 0 0 1px #246454}.subject input:focus-visible+span{outline:3px solid #d2a24b;outline-offset:3px}input,button{font:inherit}input[type=date],input[type=number]{width:100%;min-width:0;background:#fafbf8;border:1px solid #dce3dc;border-radius:10px;padding:12px;color:#233c35;margin:10px 0 22px;min-height:48px}.time-fields{display:flex;gap:14px}.time-fields label{flex:1;min-width:0}button{cursor:pointer;min-height:44px;border-radius:10px;border:1px solid #dce3dc;padding:10px 15px;background:white;color:#36574b}button:focus-visible,input:focus-visible{outline:3px solid #d2a24b;outline-offset:2px}.save{width:100%;background:#246454;color:white;border:0;font-weight:700;padding:15px}.save:hover{background:#194c3e}.status{font-size:13px;margin:12px 0 0;min-height:22px;color:#246454}.status.error{color:#ad3535}.section-note{font-size:12px;color:#77837a;font-weight:400;margin-left:8px}.subject-row{margin:22px 0}.subject-heading{display:flex;justify-content:space-between;gap:12px;font-size:14px;margin-bottom:10px}.subject-heading strong{font-variant-numeric:tabular-nums}.track{height:8px;background:#f0f2ec;border-radius:10px;overflow:hidden}.fill{height:100%;border-radius:10px;transition:width .3s}.history-top{display:flex;align-items:center;justify-content:space-between;gap:10px}.history-top h2{margin:0}.count{color:#768077;font-size:12px}.history{list-style:none;padding:0;margin:14px 0 0;max-height:360px;overflow:auto}.entry{display:flex;align-items:center;gap:12px;border-top:1px solid #edf0e9;padding:14px 0}.entry-info{flex:1}.entry-info strong{font-size:14px}.entry-info small{display:block;color:#78847b;font-size:12px;margin-top:5px}.entry-time{font-weight:650;font-size:14px}.delete{font-size:12px;border:0;background:#f6f7f2;color:#758077;padding:8px}.empty{font-size:14px;text-align:center;color:#78847b;padding:24px 0;line-height:1.8}.storage-note{color:#798279;font-size:12px;text-align:center;margin:4px auto;max-width:620px}.backup{display:flex;justify-content:center;gap:10px;margin:18px 0}.backup button{font-size:12px}footer{margin-top:12px}@media(max-width:640px){main{padding:22px 16px 36px}header{margin-bottom:28px}.date{font-size:11px}.brand{font-size:16px}.mark{width:32px;height:32px;margin-right:6px}.columns{grid-template-columns:1fr;gap:0}.card{padding:22px}.stat{padding:20px 16px}.summary{gap:12px}.stat-label{font-size:12px}.section-note{font-size:11px}}
+
+html{scroll-behavior:smooth;scroll-padding-top:20px}body{background:radial-gradient(ellipse at top left,#e4eee6,transparent 55%),#f4f6f2}main{max-width:980px;padding-bottom:110px}.card,.stat{box-shadow:0 6px 24px #244c3510;border-radius:24px}.card{border-color:#e8ede5}header{margin-bottom:24px}.intro{margin-bottom:22px}h1{font-size:clamp(24px,5vw,32px)}.exam{padding:24px;background:linear-gradient(125deg,#1b5145,#377e68);border-radius:26px;color:white;margin-bottom:20px;box-shadow:0 12px 26px #24645424}.eyebrow{font-size:11px;letter-spacing:.12em;color:#cce4d7}.exam-top{display:flex;justify-content:space-between;align-items:center;gap:14px}.exam h2{margin:8px 0;font-size:20px}.countdown{font-size:30px;white-space:nowrap;font-weight:800}.exam-caption{font-size:12px;color:#d5e7dc;margin:8px 0}.exam details{margin-top:14px;border-top:1px solid #ffffff30;padding-top:10px}.exam summary{cursor:pointer;font-size:13px;min-height:44px;display:flex;align-items:center}.exam a{color:#fff}.exam select{width:100%;font:inherit;padding:12px;border:0;border-radius:10px;margin:10px 0;color:#233c35;background:white}.exam input{margin-bottom:12px}.exam .status{color:white}.exam .error{color:#ffe2be}.goal{display:flex;align-items:center;gap:24px}.ring{--progress:0%;background:conic-gradient(#2f8268 var(--progress),#e9eee6 0);width:116px;height:116px;border-radius:50%;display:grid;place-items:center;flex:none}.ring-center{width:94px;height:94px;border-radius:50%;background:white;display:flex;flex-direction:column;align-items:center;justify-content:center}.ring strong{font-size:25px}.ring small{font-size:10px;color:#718078}.goal h2{margin:0 0 8px}.goal p{font-size:13px;margin:4px 0;color:#66776b}.pill{display:inline-block;background:#eaf4e9;color:#2c7254;font-size:11px;border-radius:20px;padding:5px 10px}.summary{grid-template-columns:repeat(3,1fr)}.stat{padding:20px}.stat-value{font-size:clamp(22px,4vw,32px)}.stat small{display:block;font-size:11px;margin-top:8px;opacity:.8}.chart-header{display:flex;align-items:center;justify-content:space-between;gap:10px}.chart-header h2{margin:0}.chart-note{font-size:12px;color:#6b7b71;margin:12px 0 0}.week-chart{width:100%;height:auto;display:block;margin-top:12px;overflow:visible}.bottom-nav{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);width:min(440px,calc(100% - 28px));display:flex;background:#fffef9f5;backdrop-filter:blur(12px);border:1px solid #e0e7dd;border-radius:22px;box-shadow:0 8px 40px #1f453a22;padding:6px 10px;padding-bottom:max(6px,env(safe-area-inset-bottom));z-index:5}.bottom-nav a{flex:1;text-align:center;text-decoration:none;color:#4d6659;font-size:11px;padding:7px;min-height:48px}.bottom-nav span{display:block;font-size:19px;margin-bottom:2px}.bottom-nav a:hover{background:#edf4e9;border-radius:14px}.delete{color:#a84d4d;background:#fff1ed;min-width:48px}.save{border-radius:15px;box-shadow:0 4px 12px #24645420}select:focus-visible,summary:focus-visible,a:focus-visible{outline:3px solid #d2a24b;outline-offset:3px}@media(max-width:640px){main{padding-bottom:115px}.exam{padding:20px}.exam-top{align-items:flex-start;flex-direction:column;gap:4px}.countdown{font-size:36px}.summary{gap:8px}.stat{padding:16px 10px;border-radius:20px}.stat-label{font-size:11px}.stat-value{font-size:21px}.stat small{font-size:10px}.goal{gap:18px}.goal h2{font-size:17px}.card{padding:20px}.chart-header{align-items:flex-start}.chart-header .pill{white-space:nowrap}.ring{width:104px;height:104px}.ring-center{width:84px;height:84px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.fill{transition:none}}
+</style>
+</head>
+<body>
+<main id="home">
+<header><div class="brand"><span class="mark" aria-hidden="true">✎</span>まいにち学習</div><time id="today-label" class="date"></time></header>
+<h1>今日の一歩を、記録しよう。</h1>
+<p class="intro">小さな積み重ねが、自信になる。あなたの受験勉強ノート。</p>
+<section class="exam" aria-label="受験日までのカウントダウン">
+<div class="eyebrow">MY NEXT MILESTONE</div><div class="exam-top"><div><h2>北海学園大学</h2><p id="exam-caption" class="exam-caption"></p></div><strong id="countdown" class="countdown"></strong></div>
+<details><summary>受験日を変更する</summary><form id="exam-form"><label for="exam-preset">入試日程</label><select id="exam-preset"><option value="2027-02-09">2027年度 一般選抜 A日程 · 2月9日</option><option value="2027-02-10">2027年度 一般選抜 B日程 · 2月10日</option><option value="custom">別の日付を設定</option></select><label for="exam-date">受験日</label><input type="date" id="exam-date" required><button type="submit">受験日を保存</button><p id="exam-status" class="status" role="status"></p></form><p class="exam-caption">初期設定は一般選抜A日程です。自分の受験する日程を選んでください。<a href="https://www.hgu.jp/examination/examination-schedule.html" target="_blank" rel="noopener">公式日程を確認 ↗</a></p></details>
+</section>
+<section class="card goal" aria-label="今日の目標達成率"><div id="goal-ring" class="ring"><div class="ring-center"><strong id="goal-rate">0%</strong><small>目標達成率</small></div></div><div><span class="pill">DAILY GOAL</span><h2 style="margin-top:10px">1日3時間を目指そう</h2><p id="goal-message"></p><p>今日の全科目の合計で集計</p></div></section>
+<section class="summary" aria-label="勉強時間の集計">
+<div class="stat"><span class="stat-label">今日の勉強時間</span><strong class="stat-value" id="today-total">0分</strong></div>
+<div class="stat"><span class="stat-label">累計勉強時間</span><strong class="stat-value" id="all-total">0分</strong></div>
+<div class="stat"><span class="stat-label">連続勉強日数</span><strong class="stat-value" id="streak">0日</strong><small id="streak-note"></small></div>
+</section>
+<section id="activity" class="card"><div class="chart-header"><h2>過去7日間の勉強時間</h2><span id="week-total" class="pill"></span></div><div id="week-chart"></div><p class="chart-note">今日を含む7日間 · 破線は1日3時間の目標</p></section>
+<div class="columns">
+<section class="card" id="record"><h2>勉強を記録する</h2>
+<form id="study-form">
+<fieldset><legend>科目</legend><div class="subjects">
+<label class="subject"><input type="radio" name="subject" value="英語" checked><span>英語</span></label>
+<label class="subject"><input type="radio" name="subject" value="国語"><span>国語</span></label>
+<label class="subject"><input type="radio" name="subject" value="数学I・A"><span>数学I・A</span></label>
+</div></fieldset>
+<label for="study-date">勉強した日</label><input type="date" id="study-date" required>
+<div class="time-fields"><label>時間<input id="hours" type="number" min="0" max="24" step="1" value="0" inputmode="numeric" required></label><label>分<input id="minutes" type="number" min="0" max="59" step="1" value="30" inputmode="numeric" required></label></div>
+<button class="save" type="submit">＋ 勉強時間を保存</button>
+<p id="status" class="status" role="status" aria-live="polite"></p>
+</form></section>
+<div><section class="card"><h2>科目別の勉強時間<span class="section-note">累計</span></h2><div id="subject-totals"></div></section>
+<section class="card" id="records"><div class="history-top"><h2>勉強の記録</h2><span id="record-count" class="count"></span></div><ul id="history" class="history"></ul></section></div>
+</div>
+<footer><p class="storage-note">記録はこのブラウザに自動保存されます。<br>ブラウザのデータを削除すると記録も消えるため、ときどきバックアップしてください。端末間の同期はありません。</p><div class="backup"><button id="export" type="button">バックアップを保存</button><button id="import" type="button">バックアップを復元</button><input id="backup-file" type="file" accept="application/json,.json" hidden></div></footer>
+</main><nav class="bottom-nav" aria-label="メインナビゲーション"><a href="#home"><span aria-hidden="true">⌂</span>ホーム</a><a href="#record"><span aria-hidden="true">＋</span>記録する</a><a href="#activity"><span aria-hidden="true">▥</span>振り返り</a><a href="#records"><span aria-hidden="true">≡</span>履歴</a></nav>
+<script>
+'use strict';
+const KEY='mainichi-study-v1';
+const EXAM_KEY='mainichi-exam-v1';
+const GOAL=180;
+let examDate='2027-02-09';
+const SUBJECTS=['英語','国語','数学I・A'];
+const COLORS=['#418774','#cba45f','#7d8cbb'];
+const $=id=>document.getElementById(id);
+const localDate=()=>{const d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`};
+const duration=n=>n<60?`${n}分`:`${Math.floor(n/60)}時間${n%60?` ${n%60}分`:''}`;
+function validDate(s){if(typeof s!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(s))return false;const d=new Date(s+'T12:00:00');return !isNaN(d)&&`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`===s;}
+// Calendar arithmetic uses UTC day numbers to avoid daylight-saving offsets.
+function dayNumber(date){return Math.floor(Date.parse(date+'T00:00:00Z')/86400000);}
+function dateFromDay(n){return new Date(n*86400000).toISOString().slice(0,10);}
+function statistics(items,today){
+ const totals=new Map();for(const r of items)totals.set(r.date,(totals.get(r.date)||0)+r.minutes);
+ const day=dayNumber(today),todayMinutes=totals.get(today)||0;
+ let cursor=day,streak=0;if(!todayMinutes)cursor--;
+ while((totals.get(dateFromDay(cursor))||0)>0){streak++;cursor--;}
+ const week=Array.from({length:7},(_,i)=>{const date=dateFromDay(day-6+i);return {date,minutes:totals.get(date)||0};});
+ return {todayMinutes,streak,week,rate:Math.floor(todayMinutes/GOAL*100)};
+}
+function renderInsights(today){
+ const {todayMinutes,streak,week,rate}=statistics(records,today);
+ $('goal-rate').textContent=`${rate}%`;$('goal-ring').style.setProperty('--progress',`${Math.min(rate,100)}%`);
+ $('goal-message').textContent=todayMinutes>=GOAL?'今日の目標達成！この積み重ねが力になる。':`目標まであと${duration(GOAL-todayMinutes)}`;
+ $('streak').textContent=`${streak}日`;$('streak-note').textContent=streak?(todayMinutes?'今日まで継続中':'昨日まで継続中'):'今日から始めよう';
+ $('week-total').textContent=`合計 ${duration(week.reduce((s,d)=>s+d.minutes,0))}`;
+ const max=Math.max(GOAL,...week.map(d=>d.minutes)),top=30,base=178,height=148,goalY=base-GOAL/max*height;
+ const bars=week.map((d,i)=>{const x=48+i*49,h=d.minutes/max*height,label=d.date.slice(5).replace('-','/');return `<g><title>${d.date}：${duration(d.minutes)}</title><rect x="${x}" y="${base-h}" width="26" height="${h}" rx="5" fill="${i===6?'#246454':'#a8c8b7'}"/><text x="${x+13}" y="${Math.max(top-6,base-h-8)}" text-anchor="middle" font-size="10" fill="#365747">${d.minutes}分</text><text x="${x+13}" y="200" text-anchor="middle" font-size="11" fill="#61796c">${label}</text>${i===6?`<text x="${x+13}" y="216" text-anchor="middle" font-size="10" fill="#246454">今日</text>`:''}</g>`;}).join('');
+ $('week-chart').innerHTML=`<svg class="week-chart" viewBox="0 0 396 225" role="img" aria-labelledby="chart-title chart-desc"><title id="chart-title">過去7日間の勉強時間</title><desc id="chart-desc">${week.map(d=>`${d.date} ${duration(d.minutes)}`).join('、')}。1日の目標は180分。</desc><line x1="40" y1="${base}" x2="387" y2="${base}" stroke="#e1e8de"/><line x1="40" y1="${goalY}" x2="387" y2="${goalY}" stroke="#a88444" stroke-dasharray="4 4"/><text x="2" y="${goalY+4}" font-size="10" fill="#866b38">180分</text>${bars}</svg>`;
+ const days=dayNumber(examDate)-dayNumber(today);$('countdown').textContent=days>0?`あと ${days} 日`:days===0?'今日が受験日':'受験日を迎えました';
+ const name=examDate==='2027-02-09'?'一般選抜 A日程':examDate==='2027-02-10'?'一般選抜 B日程':'設定した受験日';$('exam-caption').textContent=`${examDate.replaceAll('-',' / ')} · ${name}`;
+}
+function validRecords(a){return Array.isArray(a)&&a.every(r=>r&&typeof r.id==='string'&&SUBJECTS.includes(r.subject)&&validDate(r.date)&&Number.isInteger(r.minutes)&&r.minutes>0&&r.minutes<=1440)&&new Set(a.map(r=>r.id)).size===a.length;}
+let records=[];let readable=true;
+function message(text,error=false){$('status').textContent=text;$('status').classList.toggle('error',error);}
+try{const raw=localStorage.getItem(KEY);if(raw!==null){const data=JSON.parse(raw);if(!validRecords(data))throw Error();records=data;}}catch(e){readable=false;message('保存データを読み込めません。このブラウザの保存設定を確認してください。',true);}
+function commit(next){try{if(!readable)throw Error();localStorage.setItem(KEY,JSON.stringify(next));records=next;render();return true;}catch(e){message('保存できませんでした。ブラウザの保存設定や空き容量を確認してください。',true);return false;}}
+function render(){const today=localDate();renderInsights(today);$('today-label').textContent=new Date().toLocaleDateString('ja-JP',{year:'numeric',month:'long',day:'numeric',weekday:'short'});$('study-date').max=today;
+const total=records.reduce((s,r)=>s+r.minutes,0);$('all-total').textContent=duration(total);$('today-total').textContent=duration(records.filter(r=>r.date===today).reduce((s,r)=>s+r.minutes,0));
+$('subject-totals').replaceChildren();SUBJECTS.forEach((s,i)=>{const sum=records.filter(r=>r.subject===s).reduce((a,r)=>a+r.minutes,0);const row=document.createElement('div');row.className='subject-row';row.innerHTML=`<div class="subject-heading"><span>${s}</span><strong>${duration(sum)}</strong></div><div class="track"><div class="fill" style="width:${total?sum/total*100:0}%;background:${COLORS[i]}"></div></div>`;$('subject-totals').append(row);});
+$('record-count').textContent=`${records.length}件`;$('history').replaceChildren();if(!records.length){const li=document.createElement('li');li.className='empty';li.textContent='まだ記録はありません。最初の勉強を記録してみましょう。';$('history').append(li);}
+[...records].reverse().sort((a,b)=>b.date.localeCompare(a.date)).forEach(r=>{const li=document.createElement('li');li.className='entry';const info=document.createElement('div');info.className='entry-info';const name=document.createElement('strong');name.textContent=r.subject;const date=document.createElement('small');date.textContent=r.date.replaceAll('-',' / ');info.append(name,date);const time=document.createElement('span');time.className='entry-time';time.textContent=duration(r.minutes);const del=document.createElement('button');del.className='delete';del.textContent='削除';del.setAttribute('aria-label',`${r.date}の${r.subject} ${duration(r.minutes)}を削除`);del.onclick=()=>{if(confirm(`${r.date} ${r.subject} ${duration(r.minutes)}の記録を削除しますか？`)&&commit(records.filter(x=>x.id!==r.id)))message('記録を削除しました。');};li.append(info,time,del);$('history').append(li);});}
+try{const saved=localStorage.getItem(EXAM_KEY);if(saved!==null){if(!validDate(saved))throw Error();examDate=saved;}}catch(e){$('exam-status').textContent='受験日の設定を読み込めなかったため、初期日程を表示しています。';}
+function syncExamForm(){$('exam-date').value=examDate;$('exam-preset').value=['2027-02-09','2027-02-10'].includes(examDate)?examDate:'custom';}
+syncExamForm();
+$('exam-preset').onchange=e=>{if(e.target.value!=='custom')$('exam-date').value=e.target.value;};
+$('exam-date').oninput=()=>{$('exam-preset').value=['2027-02-09','2027-02-10'].includes($('exam-date').value)?$('exam-date').value:'custom';};
+$('exam-form').onsubmit=e=>{e.preventDefault();const next=$('exam-date').value;if(!validDate(next))return;try{localStorage.setItem(EXAM_KEY,next);examDate=next;render();$('exam-status').textContent='受験日を保存しました。';$('exam-status').classList.remove('error');}catch(e){$('exam-status').textContent='保存できませんでした。ブラウザの保存設定を確認してください。';$('exam-status').classList.add('error');}};
+$('study-date').value=localDate();
+$('study-form').addEventListener('submit',e=>{e.preventDefault();const hours=Number($('hours').value),mins=Number($('minutes').value),minutes=hours*60+mins,date=$('study-date').value,subject=new FormData(e.target).get('subject');if(!Number.isInteger(hours)||!Number.isInteger(mins)||hours<0||mins<0||mins>59||minutes<1||minutes>1440){message('勉強時間は1分〜24時間で入力してください。',true);return;}if(!validDate(date)||date>localDate()){message('今日以前の日付を選んでください。',true);return;}if(commit([...records,{id:crypto.randomUUID?crypto.randomUUID():`${Date.now()}-${Math.random()}`,date,subject,minutes}]))message(`${subject}の${duration(minutes)}を保存しました。おつかれさま！`);});
+$('export').onclick=()=>{const blob=new Blob([JSON.stringify(records,null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=`study-backup-${localDate()}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
+$('import').onclick=()=>$('backup-file').click();
+$('backup-file').onchange=async e=>{const file=e.target.files[0];if(!file)return;try{const imported=JSON.parse(await file.text());if(!validRecords(imported))throw Error();if(confirm(`${imported.length}件のバックアップを復元しますか？現在の記録は置き換わります。`)&&commit(imported))message('バックアップを復元しました。');}catch(e){message('復元できませんでした。このアプリで保存したJSONファイルを選んでください。',true);}finally{$('backup-file').value='';}};
+window.addEventListener('storage',e=>{if(e.key===EXAM_KEY||e.key===null){const saved=localStorage.getItem(EXAM_KEY);if(saved===null||validDate(saved)){examDate=saved||'2027-02-09';syncExamForm();render();}}if(e.key===KEY||e.key===null){try{const data=JSON.parse(localStorage.getItem(KEY)||'[]');if(!validRecords(data))throw Error();records=data;render();}catch(e){message('別の画面の保存データを読み込めませんでした。',true);}}});
+render();setInterval(render,60000);document.addEventListener('visibilitychange',()=>{if(!document.hidden)render();});
+</script>
+</body>
+</html>
